@@ -1,0 +1,95 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Query {
+    allLinks: [Link],
+    allSamples: [Sample]
+}
+
+type Link {
+    id: ID!
+    url: String!
+    description: String!
+    postedBy: User
+}
+
+
+
+type Sample {
+
+    id: ID!
+#    employeeId: String!
+    processorId: String!
+    markedLatitude: String!
+    markedLongitude: String!
+    killDate: String!
+    species: String!
+    killType: String!
+    sex: String!
+    age: String!
+    earNotch: Boolean!
+    Comments: String!
+    cwdCode: String!
+    customerID: String!
+    gameCheckNumber: String!
+    firstName: String!
+    lastName:String!
+    address: String!
+    city: String!
+    zipCode: String!
+    phoneNumber: String!
+
+
+}
+
+
+type User {
+    id: ID!
+    name: String!
+    email: String
+    password: String
+
+}
+
+input AuthData {
+    email: String!
+    password: String!
+}
+
+type SigninPayload {
+    token: String
+    user: User
+}
+
+type Mutation {
+    createUser(name: String!, authProvider: AuthData!): User
+    createLink(url: String!, description: String!): Link
+    createSample(
+            id: ID!,
+#            employeeId: String,
+            processorId: String,
+            markedLatitude: String,
+            markedLongitude: String,
+            killDate: String,
+            species: String,
+            killType: String,
+            sex: String,
+            age: String,
+            earNotch: Boolean,
+            Comments: String,
+            cwdCode: String,
+            customerID: String,
+            gameCheckNumber: String,
+            firstName: String,
+            lastName: String,
+            address: String,
+            city: String,
+            zipCode: String,
+            phoneNumber: String): Sample
+
+    signinUser(auth:AuthData): SigninPayload
+
+}
+
