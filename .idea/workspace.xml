@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d5c0b986-56a4-4d0c-a663-3b3da2aa28d1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/howtographql/hackernews/GraphQLEndpoint.class" afterPath="$PROJECT_DIR$/target/classes/com/howtographql/hackernews/GraphQLEndpoint.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/howtographql/hackernews/Mutation.class" afterPath="$PROJECT_DIR$/target/classes/com/howtographql/hackernews/Mutation.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schema.graphqls" afterPath="$PROJECT_DIR$/target/classes/schema.graphqls" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -506,7 +509,7 @@
       <option name="presentableId" value="Default" />
       <updated>1520366162853</updated>
       <workItem from="1520366165291" duration="388000" />
-      <workItem from="1520366564002" duration="32458000" />
+      <workItem from="1520366564002" duration="32476000" />
     </task>
     <task id="LOCAL-00001" summary="created voting capablilites">
       <created>1520458985348</created>
@@ -515,11 +518,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520458985348</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created voting capablilites">
+      <created>1520459011858</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1520459011858</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32846000" />
+    <option name="totallyTimeSpent" value="32864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2566" y="247" width="1914" height="1058" extended-state="6" />
