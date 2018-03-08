@@ -85,7 +85,7 @@ public void saveSample(Sample sample){
         doc.append("killDate", sample.getKillDate());
         doc.append("species", sample.getSpecies());
         doc.append("killType", sample.getKillType());
-        doc.append("sex", sample.getSex());
+        doc.append("sex", sample.getSex().toString());
         doc.append("age", sample.getAge());
         doc.append("earNotch", sample.getEarNotch());
         doc.append("comments", sample.getComments());
@@ -106,6 +106,8 @@ public void saveSample(Sample sample){
 
 
     private Sample sample(Document doc){
+
+
         return new Sample(
                 doc.get("_id").toString(),
                 doc.getString("processorId"),
@@ -114,7 +116,7 @@ public void saveSample(Sample sample){
                 doc.getString("killDate"),
                 doc.getString("species"),
                 doc.getString("killType"),
-                doc.getString("sex"),
+                Sample.Sex.valueOf(doc.getString("sex")),
                 doc.getString("age"),
                 doc.getBoolean("earNotch"),
                 doc.getString("comments"),

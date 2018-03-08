@@ -9,6 +9,7 @@ com/howtographql/hackernews/UserRepository.class
 com/howtographql/hackernews/LinkResolver.class
 com/howtographql/hackernews/Scalars$1.class
 com/howtographql/hackernews/VoteRepository.class
+com/howtographql/hackernews/Sample$Sex.class
 com/howtographql/hackernews/Scalars.class
 com/howtographql/hackernews/Link.class
 com/howtographql/hackernews/SampleRepository.class

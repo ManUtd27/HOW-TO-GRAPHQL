@@ -14,7 +14,7 @@ public class Sample {
     private final String killDate;
     private final String species;
     private final String killType;
-    private final String sex;
+    private  Sex sex;
     private final String age;
     private final Boolean earNotch;
     private final String comments;
@@ -29,6 +29,11 @@ public class Sample {
     private final String phoneNumber;
 
 
+    public  enum Sex {
+        MALE, FEMALE
+    }
+
+
     /**
      * Constructor with all paramater but ID
      */
@@ -37,7 +42,7 @@ public class Sample {
 //    }
 
 
-    public Sample(String id,  String processorId, String markedLatitude, String markedLongitude, String killDate, String species, String killType, String sex, String age, Boolean earNotch, String comments, String cwdCode, String customerID, String gameCheckNumber, String firstName, String lastName, String address, String city, String zipCode, String phoneNumber ){
+    public Sample(String id,  String processorId, String markedLatitude, String markedLongitude, String killDate, String species, String killType, Sex sex, String age, Boolean earNotch, String comments, String cwdCode, String customerID, String gameCheckNumber, String firstName, String lastName, String address, String city, String zipCode, String phoneNumber ){
         this.id = id;
 //        this.employeeId = employeeId;
         this.processorId = processorId;
@@ -105,8 +110,12 @@ public class Sample {
         return killType;
     }
 
-    public String getSex() {
+    public Sex getSex() {
         return sex;
+    }
+
+    public void setSex(Sex sex) {
+        this.sex = sex;
     }
 
     public String getAge() {

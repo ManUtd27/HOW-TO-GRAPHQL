@@ -1,19 +1,22 @@
+# Default Schema needed to define Root Node accessible
 schema {
     query: Query
     mutation: Mutation
 }
 
+# Root Query Node that defines all queries accessible
 type Query {
     allLinks(filter:LinkFilter, skip: Int = 0, first: Int = 0): [Link]
     allSamples(filter: SampleFilter, skip: Int = 0, first: Int = 0): [Sample]
 }
 
+# input Type used to filter Links
 input LinkFilter {
     description_contains: String
     url_contains: String
 }
 
-
+# Link model with attributes
 type Link {
     id: ID!
     url: String!
@@ -22,7 +25,7 @@ type Link {
 }
 
 
-
+# Sample Model with attribues
 type Sample {
 
     id: ID!
@@ -33,7 +36,7 @@ type Sample {
     killDate: String!
     species: String!
     killType: String!
-    sex: String!
+    sex: Sex!
     age: String!
     earNotch: Boolean!
     Comments: String!
@@ -50,11 +53,13 @@ type Sample {
 
 }
 
+# input type to help filter Samples
 input SampleFilter {
     species_contains: String
     killType_contains: String
 }
 
+# User model with attributes
 type User {
     id: ID!
     name: String!
@@ -63,16 +68,19 @@ type User {
 
 }
 
+# input type used to supply Authd data for User Type
 input AuthData {
     email: String!
     password: String!
 }
 
+# Payload Model used with Authentication
 type SigninPayload {
     token: String
     user: User
 }
 
+# Votes Model with attributes
 type Vote {
     id:ID!
     createdAt: DateTime!
@@ -80,8 +88,10 @@ type Vote {
     link: Link!
 }
 
+# Custom Scalar type used for timestamping when User Type votes on Link type
 scalar DateTime
 
+# Root noded used to define all mutation accessible/able to perform on various Model Type
 type Mutation {
     createUser(name: String!, authProvider: AuthData!): User
     createLink(url: String!, description: String!): Link
@@ -94,7 +104,7 @@ type Mutation {
             killDate: String,
             species: String,
             killType: String,
-            sex: String,
+            sex: Sex,
             age: String,
             earNotch: Boolean,
             Comments: String,
@@ -113,3 +123,7 @@ type Mutation {
 
 }
 
+enum Sex {
+    MALE
+    FEMALE
+}

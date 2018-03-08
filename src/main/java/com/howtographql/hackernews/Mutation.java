@@ -49,7 +49,7 @@ public class Mutation implements GraphQLRootResolver {
      * This method creates a new Sample object on Paramateers and add Sample to list of Sample Repository
      * @return
      */
-    public Sample createSample(String id, String processorId, String markedLatitude, String markedLongitude, String killDate, String species, String killType, String sex, String age, Boolean earNotch, String comments, String cwdCode, String customerID, String gameCheckNumber, String firstName, String lastName, String address, String city, String zipCode, String phoneNumber){
+    public Sample createSample(String id, String processorId, String markedLatitude, String markedLongitude, String killDate, String species, String killType, Sample.Sex sex, String age, Boolean earNotch, String comments, String cwdCode, String customerID, String gameCheckNumber, String firstName, String lastName, String address, String city, String zipCode, String phoneNumber){
         Sample newSample = new Sample(id, processorId, markedLatitude,markedLongitude,killDate,species,killType,sex,age,earNotch,comments,cwdCode,customerID,gameCheckNumber,firstName,lastName,address,city,zipCode,phoneNumber);
         sampleRepository.saveSample(newSample);
         return  newSample;
