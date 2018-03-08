@@ -26,8 +26,8 @@ public class Query implements GraphQLRootResolver {
         return linkRepository.getAllLinks(filter, skip.intValue(), first.intValue());
     }
 
-    public List<Sample> allSamples(){
-        return sampleRepository.getAllSamples();
+    public List<Sample> allSamples(SampleFilter filter, Number skip, Number first){
+        return sampleRepository.getAllSamples(filter, skip.intValue(), first.intValue());
     }
 
 

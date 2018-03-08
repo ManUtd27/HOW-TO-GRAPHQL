@@ -1,17 +1,22 @@
 package com.howtographql.hackernews;
 
 
+import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import org.bson.Document;
+import org.bson.conversions.Bson;
 import org.bson.types.ObjectId;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
+import static com.mongodb.client.model.Filters.and;
 import static com.mongodb.client.model.Filters.eq;
+import static com.mongodb.client.model.Filters.regex;
 
 /**
- * Sample Repositoryclass that will neatly isolate the concern of saving and loading links from the storage.
+ * Sample Repository class that will neatly isolate the concern of saving and loading links from the storage.
  * @author sjwilliams
  */
 public class SampleRepository {
@@ -35,12 +40,40 @@ public class SampleRepository {
 
 
 
-    public List<Sample> getAllSamples(){
+    public List<Sample> getAllSamples(SampleFilter filter,  int skip, int first){
+        Optional<Bson> mongoFilter = Optional.ofNullable(filter).map(this::buildFilter);
+
         List<Sample> allSamples = new ArrayList<>();
-        for (Document doc : samples.find()){
+        FindIterable<Document> documents = mongoFilter.map(samples::find).orElseGet(samples::find);
+        for (Document doc : documents.skip(skip).limit(first)){
             allSamples.add(sample(doc));
         }
         return allSamples;
+    }
+
+
+    /**
+     * Method helper for filter data
+     * @param filter
+     * @return
+     */
+    private Bson buildFilter(SampleFilter filter){
+
+        String speciesPattern = filter.getSpeciesContains();
+        String killTypePattern = filter.getKillTypeContains();
+        Bson speciesCondition = null;
+        Bson killTypeCondition = null;
+
+        if (speciesPattern != null && !speciesPattern.isEmpty()){
+            speciesCondition = regex("species", ".*" + speciesPattern + ".*", "i");
+        }
+        if (killTypePattern != null && !killTypePattern.isEmpty()) {
+            killTypeCondition = regex("killType", ".*" + killTypePattern + ".*", "i");
+        }
+        if (speciesCondition != null && killTypeCondition != null){
+            return and(speciesCondition, killTypeCondition);
+        }
+        return speciesCondition != null ? speciesCondition:killTypeCondition;
     }
 
 
