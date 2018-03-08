@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c0b986-56a4-4d0c-a663-3b3da2aa28d1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/SampleFilter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/howtographql/hackernews/SampleFilter.class" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/Query.java" afterPath="$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/Query.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/SampleRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/SampleRepository.java" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/schema.graphqls" afterPath="$PROJECT_DIR$/src/main/resources/schema.graphqls" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/howtographql/hackernews/Query.class" afterPath="$PROJECT_DIR$/target/classes/com/howtographql/hackernews/Query.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/howtographql/hackernews/SampleRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/howtographql/hackernews/SampleRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schema.graphqls" afterPath="$PROJECT_DIR$/target/classes/schema.graphqls" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,14 +26,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6045455">
+    <splitter split-orientation="horizontal" split-proportion="0.63461536">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="schema.graphqls" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/resources/schema.graphqls">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="89">
-                  <caret line="7" column="66" lean-forward="false" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+                <state relative-caret-position="420">
+                  <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -220,9 +212,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/LinkFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/LinkRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/SampleFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/schema.graphqls" />
         <option value="$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/SampleRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/Query.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/schema.graphqls" />
       </list>
     </option>
   </component>
@@ -471,7 +463,7 @@
       <option name="presentableId" value="Default" />
       <updated>1520366162853</updated>
       <workItem from="1520366165291" duration="388000" />
-      <workItem from="1520366564002" duration="44617000" />
+      <workItem from="1520366564002" duration="45788000" />
     </task>
     <task id="LOCAL-00001" summary="created voting capablilites">
       <created>1520458985348</created>
@@ -529,11 +521,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520530862839</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added Filtering and pagination to allSamples">
+      <created>1520538510244</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1520538510244</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45005000" />
+    <option name="totallyTimeSpent" value="46176000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2566" y="247" width="1914" height="1058" extended-state="6" />
@@ -552,7 +551,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42263758" sideWeight="0.4957265" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17735043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17735043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -611,7 +610,8 @@
     <MESSAGE value="added custom error handling" />
     <MESSAGE value="added filtering arguments and model to all filters" />
     <MESSAGE value="added pagination to filtering" />
-    <option name="LAST_COMMIT_MESSAGE" value="added pagination to filtering" />
+    <MESSAGE value="Added Filtering and pagination to allSamples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Filtering and pagination to allSamples" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -889,51 +889,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/SanitizedError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/Mutation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
           <caret line="66" column="49" lean-forward="false" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/LinkFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="3" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/LinkRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="78" column="7" lean-forward="false" selection-start-line="74" selection-start-column="4" selection-end-line="78" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -977,10 +936,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/LinkRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="78" column="7" lean-forward="false" selection-start-line="74" selection-start-column="4" selection-end-line="78" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/LinkFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#1031#1032#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/howtographql/hackernews/SanitizedError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/schema.graphqls">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="7" column="66" lean-forward="false" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+        <state relative-caret-position="420">
+          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding />
         </state>
       </provider>
